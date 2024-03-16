@@ -59,6 +59,30 @@
         "lng": "12.568359375000002"
       },
       "id": 98443199
+    },
+    {
+      "cityName": "Kolkata",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-03-16T02:56:12.152Z",
+      "notes": "agageg",
+      "position": {
+        "lat": "22.574270440097916",
+        "lng": "88.36282253265382"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "San Jose",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-03-16T02:57:27.352Z",
+      "notes": "aegewgeg",
+      "position": {
+        "lat": "37.44051924041408",
+        "lng": "-122.16796875000001"
+      },
+      "id": 98443201
     }
   ]
 }

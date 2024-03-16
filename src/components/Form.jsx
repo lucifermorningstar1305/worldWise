@@ -32,7 +32,8 @@ function Form() {
   const [date, setDate] = useState(new Date());
   const [notes, setNotes] = useState("");
   const [emoji, setEmoji] = useState("");
-  const { createCity } = useCities();
+  const { createCity, isLoading } = useCities();
+  const navigate = useNavigate();
 
   useEffect(
     function () {
@@ -70,7 +71,7 @@ function Form() {
     [lat, lng]
   );
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!cityName || !date) return;
@@ -84,7 +85,8 @@ function Form() {
       position: { lat, lng },
     };
 
-    createCity(newCity);
+    await createCity(newCity);
+    await navigate("/app");
   };
 
   if (!lat && !lng)
@@ -94,7 +96,10 @@ function Form() {
   if (geoCodingErr) return <Message message={geoCodingErr} />;
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form
+      className={`${styles.form} ${isLoading ? styles.loading : ""}`}
+      onSubmit={handleSubmit}
+    >
       <div className={styles.row}>
         <label htmlFor="cityName">City name</label>
         <input
