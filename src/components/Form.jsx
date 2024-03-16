@@ -21,8 +21,6 @@ function Form() {
   const [date, setDate] = useState(new Date());
   const [notes, setNotes] = useState("");
 
-  const navigate = useNavigate();
-
   return (
     <form className={styles.form}>
       <div className={styles.row}>
