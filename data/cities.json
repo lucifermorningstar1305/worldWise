@@ -37,42 +37,6 @@
       "id": 98443197
     },
     {
-      "cityName": "Cantabrian Sea",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-03-16T02:47:22.319Z",
-      "notes": "fbfdb",
-      "position": {
-        "lat": "43.46886761482925",
-        "lng": "-4.306640625000001"
-      },
-      "id": 98443198
-    },
-    {
-      "cityName": "Acquasparta",
-      "country": "Italy",
-      "emoji": "🇮🇹",
-      "date": "2024-03-16T02:51:42.739Z",
-      "notes": "Beautiful place to visit",
-      "position": {
-        "lat": "42.66628070564928",
-        "lng": "12.568359375000002"
-      },
-      "id": 98443199
-    },
-    {
-      "cityName": "Kolkata",
-      "country": "India",
-      "emoji": "🇮🇳",
-      "date": "2024-03-16T02:56:12.152Z",
-      "notes": "agageg",
-      "position": {
-        "lat": "22.574270440097916",
-        "lng": "88.36282253265382"
-      },
-      "id": 98443200
-    },
-    {
       "cityName": "San Jose",
       "country": "United States of America (the)",
       "emoji": "🇺🇸",

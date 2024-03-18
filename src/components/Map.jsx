@@ -41,8 +41,6 @@ const Map = () => {
     [geoLocationPosition]
   );
 
-  console.log(mapLat, mapLng);
-
   return (
     <div className={styles.mapContainer}>
       {!geoLocationPosition && (
