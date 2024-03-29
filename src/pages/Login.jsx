@@ -1,4 +1,5 @@
 import PageNav from "../components/PageNav";
+import { useAuth } from "../contexts/FakeAuthContext";
 import styles from "./Login.module.css";
 import { useState } from "react";
 
@@ -6,6 +7,11 @@ export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
   const [email, setEmail] = useState("jack@example.com");
   const [password, setPassword] = useState("qwerty");
+  const { login } = useAuth();
+
+  const handleLogin = () => {
+    login(email, password);
+  };
 
   return (
     <main className={styles.login}>
@@ -32,7 +38,7 @@ export default function Login() {
         </div>
 
         <div>
-          <button>Login</button>
+          <button onClick={handleLogin}>Login</button>
         </div>
       </form>
     </main>
